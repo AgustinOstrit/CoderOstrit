@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Top spin shot</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezadoMain">
+            <a href="../index.html">
+                <img class="encabezadoMainLogo" src="../img/logo.png" alt="logo raqueta">
+            </a>
+            <h1 class="encabezadoMainTitulo">Top spin shot</h1>
+        </div>
+        <div>
+            <ul class="encabezadoMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./tenistas.html">Tenistas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h2>Escribinos!</h2>
+        <div>
+            <form class="formulario" action="enviar.php" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Ingresá tus datos</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingresá tu nombre"
+                    required><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Ingresá tu apellido" required><br>
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="nacimiento" required><br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" placeholder="Ingresá tu correo" required>
+                    <br><br>
+                    <label for="perfil">Perfil:</label>
+                    <div>Diestro <input type="radio" name="perfil" value="diestro"></div>
+                    <div>Zurdo <input type="radio" name="perfil" value="zurdo"></div><br>
+                    <label for="datos">Datos de interés:</label><br>
+                    <textarea placeholder="Contanos sobre tu tenista favorito o la superfice donde sentís mayor comodidad" name="datos" id="" cols="30" rows="5"></textarea><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer class="pie">
+        <img class="pieLogo" src="../img/logo.png" alt="logo">
+        <div class="pieDerechos">
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="pieRedes">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+        </div>
+    </footer>
+</body>
+</html>

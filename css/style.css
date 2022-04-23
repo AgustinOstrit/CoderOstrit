@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+
+.encabezado{
+    background-color: rgb(182, 235, 122);
+}
+
+.encabezadoMain{
+    height: 64px;
+}
+
+.encabezadoMainTitulo{
+    text-align: center;
+    padding-top: 7px;
+    color: rgb(23, 112, 110);
+    text-decoration: underline;
+}
+
+.encabezadoMainLogo{
+    height: 50px;
+    margin-top: 7px;
+}
+
+.encabezadoMain a{
+    text-decoration: none;
+}
+
+.encabezadoMenu{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 8px;
+    background-color: rgb(247, 247, 238);
+}
+
+.encabezadoMenu li{
+    list-style: none;
+}
+
+.encabezadoMenu a{
+    color: rgb(251, 120, 19);
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline-start: 7px;
+    padding-inline-end: 7px;
+
+}
+
+.encabezadoMenu a:hover{
+    color: rgb(23, 112, 110);
+}
+
+h2{
+    text-align: center;
+}
+
+.banner{
+    height: 200px;
+    background-image: url(../img/Banner\ tenis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.marcaArticulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+.marcaLogo{
+    background-color: #fff;
+    border-top: 2px solid rgb(23, 112, 110);
+    border-bottom: 2px solid rgb(23, 112, 110);
+}
+
+.marcaLogoImagen{
+    height: 45px;
+    padding: 15px 0px 15px 10px;
+}
+
+.marcaArticulo div{
+    border: 2px solid rgb(182, 235, 122);
+    border-radius: 5px;
+    height: 320px;
+    width: auto;
+    /* padding: 10px 0px 10px 0px;; */
+}
+
+.marcaArticulo h3{
+    text-align: center;
+    text-decoration: underline
+}
+
+.marcaArticulo img{
+    height: 280px;
+    width: 280px;
+}
+
+.formulario{
+    margin: 0px 30px 15px 30px;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.mapaGoogle{
+    width: 290px; 
+    height: 300px;
+    border: 2px solid gray;
+}
+
+.marcaTitulo{
+    padding: 5px 0px 10px 0px;
+}
+
+.galeria{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.tenista{
+    background-color: rgb(247, 247, 238);
+    border: 2px solid rgb(23, 112, 110);
+    text-align: end;
+    border-radius: 4px;
+}
+
+.federer{
+    background-image: url(../img/tenistas/federer.png);
+    background-size: cover;
+}
+
+.tsitsipas{
+    background-image: url(../img/tenistas/tsitsipas.png);
+    background-size: cover
+}
+
+.williams{
+    color: #fff;
+    background-image: url(../img/tenistas/serena.jpg);
+    background-size: cover;
+}
+
+.nadal{
+    background-image: url(../img/tenistas/nadal.png);
+    background-size: cover;
+}
+
+.thiem{
+    background-image: url(../img/tenistas/thiem.png);
+    background-size: cover
+}
+
+.wozniacki{
+    color: #fff;
+    background-image: url(../img/tenistas/wozniacki.jpg);
+    background-size: cover;
+}
+
+.djokovic{
+    background-image: url(../img/tenistas/djokovic.png);
+    background-size: cover;
+}
+
+.schwartzman{
+    background-image: url(../img/tenistas/schwartzman.png);
+    background-size: cover
+}
+
+.sharapova{
+    color: #fff;
+    background-image: url(../img/tenistas/sharapova.jpg);
+    background-size: cover;
+}
+
+.wawrinka{
+    background-image: url(../img/tenistas/wawrinka.png);
+    background-size: cover;
+}
+
+.kyrgios{
+    background-image: url(../img/tenistas/kyrgios.png);
+    background-size: cover
+}
+
+.osaka{
+    color: #fff;
+    background-image: url(../img/tenistas/osaka.jpg);
+    background-size: cover;
+}
+
+.pie{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(182, 235, 122);
+    bottom: 0;
+    color: rgb(23, 112, 110);
+}
+
+.pieLogo{
+    height: 35px;
+    left: 7px;
+    padding-top: 12px;
+}
+
+.pie p{
+    left: 40%;
+    line-height: 50px;
+    font-size: 12px
+}
+
+.pieRedes{
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+@media only screen and (min-width: 768px){
+
+    .encabezadoMainLogo{
+        position: absolute;
+    }
+
+    .federer{
+        grid-column: 1/2;
+    }
+    
+    .tsitsipas{
+        grid-column: 2/3;
+    }
+    
+    .williams{
+        grid-column: 3/4;
+    }
+    
+    .nadal{
+        grid-column: 1/2;
+    }
+    
+    .thiem{
+        grid-column: 2/3;
+    }
+    
+    .wozniacki{
+        grid-column: 3/4;
+    }
+    
+    .djokovic{
+        grid-column: 1/2;
+    }
+    
+    .schwartzman{
+        grid-column: 2/3;
+    }
+    
+    .sharapova{
+        grid-column: 3/4;
+    }
+    
+    .wawrinka{
+        grid-column: 1/2;
+    }
+    
+    .kyrgios{
+        grid-column: 2/3;
+    }
+    
+    .osaka{
+        grid-column: 3/4;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+    .encabezadoMainLogo{
+        position: absolute;
+    }
+
+    .federer{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .tsitsipas{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .williams{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .nadal{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .thiem{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .wozniacki{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .djokovic{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .schwartzman{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .sharapova{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .wawrinka{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .kyrgios{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .osaka{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+@media only screen and (max-width: 479px){
+
+    .encabezadoMain{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .galeria{
+        height: 700px;
+    }
+    .tenista{
+        height: 200px;
+    }
+
+    .federer{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .tsitsipas{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .williams{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .nadal{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .thiem{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .wozniacki{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .djokovic{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .schwartzman{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .sharapova{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .wawrinka{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .kyrgios{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .osaka{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .encabezadoMainTitulo{
+        display: none;
+    }
+
+    .pieRedes{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
