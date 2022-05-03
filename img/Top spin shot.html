@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <title>Top spin shot</title>
+<link rel="stylesheet" href="./Top spin shot_files/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"><link rel="stylesheet" href="./Top spin shot_files/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="./Top spin shot_files/style.css"></head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezadoMain">
+            <a href="http://127.0.0.1:5500/index.html">
+                <img class="encabezadoMainLogo" src="./Top spin shot_files/logo.png" alt="logo raqueta">
+            </a>
+            <h1 class="encabezadoMainTitulo">Top spin shot</h1>
+        </div>
+        <div>
+            <ul class="encabezadoMenu">
+                <li><a href="http://127.0.0.1:5500/pages/catalogo.html">Catálogo</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/tenistas.html">Tenistas</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/contacto.html">Contacto</a></li>
+                <li><a href="http://127.0.0.1:5500/pages/nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="jumbotron jumbo1">
+            <h1>Las raquetas usadas por profesionales</h1>
+            <p>Apretá acá para ver nuestro catálogo</p>
+            <a href="http://127.0.0.1:5500/pages/catalogo.html" class="btn btn-success" role="button">Más info</a>
+        </div>
+        <div class="row">
+            <div class="jumbotron jumbo2 col-md-6">
+                <h1>Jugá como ellos!</h1>
+                <p>Apretá acá para saber qué raqueta usa tu tenista favorito y acercarte más a su juego</p>
+                <a href="http://127.0.0.1:5500/pages/catalogo.html" class="btn btn-success" role="button">Más info</a>
+            </div>
+            <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad molestias quae, sint vel
+                culpa laborum sit amet
+                placeat laboriosam repudiandae nihil non aliquam qui in mollitia perspiciatis illo nisi exercitationem
+                alias
+                optio similique, quibusdam dolore. Similique eligendi minus rem nam tenetur! Adipisci reiciendis,
+                similique
+                vero praesentium consequatur sed sunt numquam autem aut odio fugiat maiores necessitatibus. Eius
+                doloribus
+                laborum nostrum ut quidem, eum molestias quo cupiditate magni incidunt voluptatibus voluptas eaque
+                debitis
+                qui dolorem amet consequatur, accusantium eligendi architecto commodi dicta molestiae animi
+                reprehenderit!
+                Vitae, saepe, porro quod praesentium cumque exercitationem corporis voluptatum dignissimos facere nisi
+                dolorum impedit delectus? Quam?</p>
+        </div>
+    </section>
+    <footer class="pie">
+        <div>
+            <img class="pieLogo" src="./Top spin shot_files/logo.png" alt="logo">
+        </div>
+        <div class="pieDerechos">
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="pieRedes">
+            <i class="fa-brands fa-facebook-square" style="width: 321px;height: 50px;"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+        </div>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -71,7 +71,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
-    border-radius: 0;
+    margin-bottom: 0;
 }
 
 .jumbotron h1{
@@ -86,31 +86,11 @@ h2{
 .jumbo1{
     color: rgb(182, 235, 122);
     background-image: url(../img/Banner\ tenis.jpg);
-    margin-bottom: 4px;
 }
 
 .jumbo2{
     color: rgb(251, 120, 19);
     background-image: url(../img/Banner\ tenis2.jpg);
-    width: 100vw;
-    margin-bottom: 2px;
-}
-
-.jumboNosotros{
-    color: rgb(251, 120, 19);
-    background-image: url(../img/Banner\ tenis3.jpg);
-    width: 100vw;
-    margin-bottom: 2px;
-}
-
-.jumboTenistas{
-    justify-content: center;
-    width: 99vw;
-    padding-left: 35px;
-}
-
-.jumboTenistas p{
-    padding-top: 15px;
 }
 
 .marcaArticulo{
@@ -162,6 +142,10 @@ h2{
     font-size: 20px
 }
 
+.formulario{
+    margin: 0px 30px 15px 30px;
+}
+
 .mapa{
     display: flex;
     flex-direction: column;
@@ -193,11 +177,6 @@ h2{
     border: 2px solid rgb(23, 112, 110);
     text-align: end;
     border-radius: 4px;
-    transition: 0.2s;
-}
-
-.tenista:hover{
-    transform: scale(1.025);
 }
 
 .federer{
@@ -264,14 +243,6 @@ h2{
     background-size: cover;
 }
 
-.nosotros{
-    padding: 15px;
-}
-
-.formulario{
-    margin: 0px 30px 15px 30px;
-}
-
 .pie{
     position: absolute;
     display: flex;
@@ -290,17 +261,16 @@ h2{
     padding-top: 12px;
 }
 
-.pieDerechos{
-    height: 50px;
+.pie p{
     left: 40%;
     line-height: 50px;
     font-size: 12px
 }
 
 .pieRedes{
-    height: 50px;
     font-size: 30px;
     padding-top: 5px;
+    display: flex;
 }
 
 @media only screen and (min-width: 768px){
