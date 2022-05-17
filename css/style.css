@@ -114,19 +114,61 @@ h2 {
   gap: 10px;
   padding: 10px 0px 10px 0px;
 }
-.marca .marcaArticulo div {
-  border: 2px solid rgb(182, 235, 122);
+.marca .marcaArticulo .marca-wilson {
+  border: 2px solid rgb(207, 64, 64);
   border-radius: 5px;
   height: 320px;
   width: auto;
   transition: 0.2s;
 }
-.marca .marcaArticulo div h3 {
+.marca .marcaArticulo .marca-wilson:hover {
+  transform: scale(1.03);
+  background-color: rgb(207, 64, 64);
+}
+.marca .marcaArticulo .marca-wilson h3 {
   font-size: 20px;
 }
-.marca .marcaArticulo div:hover {
+.marca .marcaArticulo .marca-babolat {
+  border: 2px solid rgb(10, 164, 224);
+  border-radius: 5px;
+  height: 320px;
+  width: auto;
+  transition: 0.2s;
+}
+.marca .marcaArticulo .marca-babolat:hover {
   transform: scale(1.03);
-  background-color: rgb(182, 235, 122);
+  background-color: rgb(10, 164, 224);
+}
+.marca .marcaArticulo .marca-babolat h3 {
+  font-size: 20px;
+}
+.marca .marcaArticulo .marca-head {
+  border: 2px solid rgb(119, 118, 118);
+  border-radius: 5px;
+  height: 320px;
+  width: auto;
+  transition: 0.2s;
+}
+.marca .marcaArticulo .marca-head:hover {
+  transform: scale(1.03);
+  background-color: rgb(119, 118, 118);
+}
+.marca .marcaArticulo .marca-head h3 {
+  font-size: 20px;
+}
+.marca .marcaArticulo .marca-yonex {
+  border: 2px solid rgb(15, 109, 216);
+  border-radius: 5px;
+  height: 320px;
+  width: auto;
+  transition: 0.2s;
+}
+.marca .marcaArticulo .marca-yonex:hover {
+  transform: scale(1.03);
+  background-color: rgb(15, 109, 216);
+}
+.marca .marcaArticulo .marca-yonex h3 {
+  font-size: 20px;
 }
 .marca .marcaArticulo h3 {
   text-align: center;

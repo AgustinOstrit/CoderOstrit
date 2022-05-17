@@ -5,6 +5,11 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+$color1: rgb(182, 235, 122);
+$color2: rgb(23, 112, 110);
+$color3: rgb(251, 120, 19);
+$color4: rgb(247, 247, 238);
+
 body {
     position: relative;
     padding-bottom: 60px;
@@ -12,7 +17,7 @@ body {
 }
 
 .encabezado {
-    background-color: rgb(182, 235, 122);
+    background-color: $color1;
 
     .encabezadoMain {
         height: 64px;
@@ -25,7 +30,7 @@ body {
         h1 {
             text-align: center;
             padding-top: 7px;
-            color: rgb(23, 112, 110);
+            color: $color2;
             text-decoration: underline;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
         }
@@ -40,7 +45,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         padding: 8px;
-        background-color: rgb(247, 247, 238);
+        background-color: $color4;
         margin-bottom: 0;
 
         li {
@@ -48,7 +53,7 @@ body {
         }
 
         a {
-            color: rgb(251, 120, 19);
+            color: $color3;
             text-decoration: none;
             padding-top: 8px;
             padding-bottom: 8px;
@@ -57,7 +62,7 @@ body {
         }
 
         a:hover {
-            color: rgb(23, 112, 110);
+            color: $color2;
         }
     }
 }
@@ -84,12 +89,12 @@ body {
 }
 
 .jumbo1 {
-    @include jumbo(rgb(182, 235, 122), 4px);
+    @include jumbo($color1, 4px);
     background-image: url(../img/Banner\ tenis.jpg);
 }
 
 .jumbo2 {
-    @include jumbo(rgb(251, 120, 19), 2px);
+    @include jumbo($color3, 2px);
     background-image: url(../img/Banner\ tenis2.jpg);
     width: 100vw;
 }
@@ -116,8 +121,8 @@ h2 {
 .marca {
     .marcaLogo {
         background-color: #fff;
-        border-top: 2px solid rgb(23, 112, 110);
-        border-bottom: 2px solid rgb(23, 112, 110);
+        border-top: 2px solid $color2;
+        border-bottom: 2px solid $color2;
 
         img {
             height: 70px;
@@ -132,21 +137,30 @@ h2 {
         gap: 10px;
         padding: 10px 0px 10px 0px;        
         
-        div {
-            border: 2px solid rgb(182, 235, 122);
-            border-radius: 5px;
-            height: 320px;
-            width: auto;
-            transition: 0.2s;
+        $colores: (
+            wilson: rgb(207, 64, 64),
+            babolat: rgb(10, 164, 224),
+            head: rgb(119, 118, 118),
+            yonex: rgb(15, 109, 216),
+            );
 
-            h3 {
-                font-size: 20px
+        @each $marca, $valor in $colores {
+            .marca-#{$marca} {
+                border: 2px solid $valor;
+                border-radius: 5px;
+                height: 320px;
+                width: auto;
+                transition: 0.2s;
+                
+                &:hover{
+                    transform: scale(1.03);
+                    background-color: $valor;
+                }
+
+                h3 {
+                    font-size: 20px
+                }
             }
-        }
-
-        div:hover {
-            transform: scale(1.03);
-            background-color: rgb(182, 235, 122);
         }
 
         h3 {
@@ -190,17 +204,15 @@ h2 {
     .tenista-1,
     .tenista-2,
     .tenista-3 {
-        background-color: rgb(247, 247, 238);
-        border: 2px solid rgb(23, 112, 110);
+        background-color: $color4;
+        border: 2px solid $color2;
         text-align: end;
         border-radius: 4px;
         transition: 0.2s;
-    }
 
-    .tenista-1:hover,
-    .tenista-2:hover,
-    .tenista-3:hover {
-        transform: scale(1.025);
+        &:hover{
+            transform: scale(1.025);
+        }
     }
 
     .williams,
@@ -244,9 +256,9 @@ footer {
     justify-content: space-evenly;
     height: 50px;
     width: 100%;
-    background-color: rgb(182, 235, 122);
+    background-color: $color1;
     bottom: 0;
-    color: rgb(23, 112, 110);
+    color: $color2;
     align-items: center;
 
     img {
