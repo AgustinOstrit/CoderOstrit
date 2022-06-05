@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Top spin shot es una tienda online de venta de raquetas de tenis. Encontrarás variedad de marcas y modelos">
+    <meta name="description"
+        content="Top spin shot es una tienda online de venta de raquetas de tenis. Encontrarás variedad de marcas y modelos">
     <meta name="keywords" content="deportes, raquetas, tennis, tenis, wilson, babolat, head, yonex, tenistas">
     <meta name="title" content="Top spin shot">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -23,6 +24,7 @@
 </head>
 
 <body>
+    <!-- Inicio de encabezado -->
     <header class="encabezado">
         <div class="encabezadoMain">
             <a href="index.html">
@@ -39,15 +41,17 @@
             </ul>
         </div>
     </header>
+    <!-- Fin de encabezado -->
+    <!-- Inicio de cuerpo de página -->
     <section>
         <div class="jumbotron jumbo1">
-            <h1>Las raquetas usadas por profesionales</h1>
+            <h2>Las raquetas usadas por profesionales</h2>
             <p>Apretá acá para ver nuestro catálogo</p>
             <a href="./pages/catalogo.html" class="btn btn-success" role="button">Más info</a>
         </div>
         <div class="row jumboTenistas">
             <div class="jumbotron jumbo2 col-md-6 jumboTenistas">
-                <h1>Jugá como ellos!</h1>
+                <h2>Jugá como ellos!</h2>
                 <p>Apretá acá para saber qué raqueta usa tu tenista favorito y acercarte más a su juego</p>
                 <a href="./pages/tenistas.html" class="btn btn-success" role="button">Más info</a>
             </div>
@@ -60,7 +64,47 @@
                     guía.</p>
             </div>
         </div>
+        <!-- Inicio de carrusel -->
+        <div class="carrusel">
+            <h2>Nuestros productos más populares</h2>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/wilson/blade.jpg" alt="Wilson Blade">
+                    <div class="carousel-caption">
+                        <span>Wilson Blade</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/babolat/pure drive.jpg" alt="Babolat pure drive">
+                    <div class="carousel-caption">
+                        <span>Babolat Pure Drive</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/head/radical.jpg" alt="Head Radical">
+                    <div class="carousel-caption">
+                        <span>Head Radical</span>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <!-- Fin de carrusel -->
     </section>
+    <!-- Fin de cuerpo de página -->
+    <!-- Inicio de pie de página -->
     <footer>
         <div>
             <img src="./img/logo.png" alt="logo">
@@ -74,6 +118,7 @@
             <i class="fa-brands fa-twitter-square"></i>
         </div>
     </footer>
+    <!-- Fin de pie de página -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

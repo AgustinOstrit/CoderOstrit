@@ -60,8 +60,9 @@ body {
   background-position-y: 50%;
   border-radius: 0;
 }
-.jumbotron h1 {
+.jumbotron h2 {
   text-shadow: 3px 3px 3px black;
+  text-align: start;
 }
 .jumbotron p {
   font-weight: 500;
@@ -92,6 +93,52 @@ body {
 }
 .jumboTenistas p {
   padding-top: 15px;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  border-top: 2px solid rgb(23, 112, 110);
+  border-bottom: 2px solid rgb(23, 112, 110);
+}
+.carrusel h2 {
+  font-size: 25px;
+}
+
+.carousel {
+  padding-top: 20px;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel .carousel-indicators li {
+  background-color: rgb(23, 112, 110);
+}
+.carousel a span {
+  background-color: rgb(23, 112, 110);
+}
+.carousel img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+.carousel .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  color: rgb(23, 112, 110);
+  display: flex;
+  justify-content: start;
+}
+.carousel .carousel-caption span {
+  background-color: rgb(182, 235, 122);
+}
+.carousel .carousel-caption p {
+  text-align: start;
 }
 
 h2 {
@@ -342,6 +389,15 @@ footer .footerRedes {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+
+  .carousel {
+    width: 450px;
+    height: 450px;
+  }
+  .carousel img {
+    width: 360px;
+    height: 360px;
+  }
 }
 @media only screen and (max-width: 479px) {
   .encabezadoMain {
@@ -377,6 +433,19 @@ footer .footerRedes {
   .pieRedes {
     font-size: 20px;
     padding-top: 10px;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .carousel {
+    width: 300px;
+    height: 300px;
+  }
+  .carousel img {
+    width: 240px;
+    height: 240px;
   }
 }
 
